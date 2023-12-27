@@ -1,0 +1,118 @@
+ body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color:  hsl(0, 0%, 95%);
+ }
+
+
+ .content{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: center;
+    margin-top:100px;
+    margin-bottom: 50px;
+    
+ }
+
+ .content .one , .content .two , .content .three{
+    /* height: 60vh; */
+    padding: 2rem;
+    line-height: 1.8;
+    border: 1px solid gray;
+    color: white;
+ }
+
+ .content .one h1, .content .two h1 , .content .three h1{
+    margin: 0;
+    text-transform: uppercase;
+    color:  hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', sans-serif;
+ }
+
+ .content .one p, .content .two p , .content .three p{
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+
+ }
+
+
+ .content  .one{
+    border-radius: 10px 0 0 10px;
+    background-color: hsl(31, 77%, 52%);
+    border: 1px 0 1px 1px ;
+    border-color: hsl(31, 77%, 52%);
+ }
+ 
+ .content .two{
+    background-color: hsl(184, 100%, 22%);
+    border-color: hsl(184, 100%, 22%);
+    
+    
+ }
+ .content .three{
+    border-radius: 0 10px 10px 0;
+    background-color:  hsl(179, 100%, 13%);
+    border: 1px 0 1px 1px;
+    border-color:  hsl(179, 100%, 13%);
+ }
+ button{
+    margin-top: 50px;
+    border: none;
+    border: 0.2px lightgray solid;
+    padding: 10px;
+    border-radius: 70px;
+    width: 130px;
+    background-color:  hsl(0, 0%, 95%);
+ }
+
+ .btn-one{
+    color: hsl(31, 77%, 52%);
+    font-weight: 700;
+    border-color: hsl(31, 77%, 52%);
+ }
+ .btn-two{
+    color:  hsl(184, 100%, 22%);
+    font-weight: 700;
+    border-color:  hsl(184, 100%, 22%);
+ }
+
+ .btn-three{
+    color:  hsl(179, 100%, 13%);
+    font-weight: 700;
+    border-color:  hsl(179, 100%, 13%);
+ }
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+
+ /* responsive  */
+ @media only screen and (max-width: 750px) {
+    .content {
+        grid-template-columns: 250px 250px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .content {
+        grid-template-columns: 250px;
+    }
+    
+    .content  .one{
+        border-radius:10px 10px 0 0;
+        /* background-color: hsl(31, 77%, 52%);
+        border: 1px 0 1px 1px ;
+        border-color: hsl(31, 77%, 52%); */
+    }
+ 
+ 
+    .content .three{
+        border-radius: 0 0 10px 10px;
+        /* background-color:  hsl(179, 100%, 13%);
+        border: 1px 0 1px 1px;
+        border-color:  hsl(179, 100%, 13%); */
+    }
+ }
